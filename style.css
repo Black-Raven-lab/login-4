@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lato", Arial, sans-serif;
+}
+
+/* Containers */
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: RGB(248, 249, 253);
+}
+
+.cont {
+  box-shadow: 0px 4px 10px rgba(160, 153, 153, 0.2);
+
+  width: 800px;
+  height: 514px;
+
+  margin-top: 30px;
+
+  display: flex;
+}
+
+.left-cont {
+  width: 50%;
+  height: 100%;
+
+  background-image: url("https://preview.colorlib.com/theme/bootstrap/login-form-14/images/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.right-cont {
+  width: 50%;
+  height: 100%;
+
+  padding: 48px;
+}
+
+/* Icons */
+
+.h3-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* makes circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 3px;
+}
+
+/* hover effect */
+.social a:hover {
+  background-color: #e3b04b;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text */
+
+h2 {
+  /* Title */
+  font-size: 28px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.5; /* vertical space between lines of text */
+}
+
+.right-cont h3 {
+  font-size: 1.75rem; /*28px */
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Login-Form */
+
+.login-form {
+  margin-top: 30px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form input::placeholder {
+  color: #bbb;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #e3b04b; /* your color */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #d49d3d;
+}
+
+/* Check-box */
+:root {
+  --checkbox-color: #f4a623; /* 🔧 change color */
+  --font-size: 16px; /* 🔧 change font size */
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: rgb(248, 249, 253);
+}
+
+/* Hide default checkbox */
+.checkbox input {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: var(--font-size);
+  color: #e3b04b;
+}
+
+/* Custom box (NO BORDER) */
+.checkmark {
+  width: 16px;
+  height: 16px;
+  background: #ddd; /* light background when unchecked */
+  border-radius: 3px;
+  margin-right: 8px;
+  position: relative;
+}
+
+/* Checked */
+.checkbox input:checked + .checkmark {
+  background-color: var(--checkbox-color);
+}
+
+/* Check icon */
+.checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.forgot {
+  font-size: var(--font-size);
+  color: #777;
+  cursor: pointer;
+}
+
+.forgot:hover {
+  color: black;
+}
+
+/* Sign Up */
+
+:root {
+  --text-color: #888; /* normal text */
+  --link-color: #e3b04b; /* Sign Up color */
+  --font-size: 16px; /* 🔧 change size */
+}
+
+.signup {
+  font-size: var(--font-size);
+  color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signup a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
